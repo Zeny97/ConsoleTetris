@@ -1,2 +1,409 @@
 ﻿  main.cpp
-  ConsoleTetris.vcxproj -> D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\x64\Debug\ConsoleTetris.exe
+  PlayingField.cpp
+  Tetromino.cpp
+  Generating Code...
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(9,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(9,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(10,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(10,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(11,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(11,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(12,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(12,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(15,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(15,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(16,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(16,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(17,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(17,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(18,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(18,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(21,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(21,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(22,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(22,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(23,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(23,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(24,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(24,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(27,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(27,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(28,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(28,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(29,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(29,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(30,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(30,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(38,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(38,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(39,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(39,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(40,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(40,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(41,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(41,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(44,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(44,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(45,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(45,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(46,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(46,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(47,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(47,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(50,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(50,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(51,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(51,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(52,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(52,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(53,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(53,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(56,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(56,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(57,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(57,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(58,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(58,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(59,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(59,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(67,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(67,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(68,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(68,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(69,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(69,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(70,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(70,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(73,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(73,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(74,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(74,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(75,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(75,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(76,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(76,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(79,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(79,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(80,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(80,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(81,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(81,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(82,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(82,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(85,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(85,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(86,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(86,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(87,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(87,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(88,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(88,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(96,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(96,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(97,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(97,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(98,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(98,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(99,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(99,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(102,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(102,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(103,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(103,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(104,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(104,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(105,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(105,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(108,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(108,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(109,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(109,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(110,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(110,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(111,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(111,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(114,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(114,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(115,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(115,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(116,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(116,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(117,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(117,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(125,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(125,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(126,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(126,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(127,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(127,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(128,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(128,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(131,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(131,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(132,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(132,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(133,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(133,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(134,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(134,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(137,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(137,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(138,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(138,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(139,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(139,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(140,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(140,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(143,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(143,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(144,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(144,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(145,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(145,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(146,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(146,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(154,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(154,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(155,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(155,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(156,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(156,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(157,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(157,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(160,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(160,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(161,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(161,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(162,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(162,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(163,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(163,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(166,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(166,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(167,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(167,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(168,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(168,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(169,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(169,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(172,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(172,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(173,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(173,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(174,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(174,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(175,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(175,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(183,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(183,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(184,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(184,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(185,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(185,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(186,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(186,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(189,5): error C2440: 'initializing': cannot convert from 'initializer list' to 'char'
+      D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(189,5):
+      The initializer contains too many elements
+  
+D:\Justin Sontopski\ConsoleTetris\ConsoleTetris\Tetromino.cpp(189,5): error C1003: error count exceeds 100; stopping compilation
