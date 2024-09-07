@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Justin Sontopski\\ConsoleTetris\\ConsoleTetris\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A118E717-800C-4A6F-99A9-A9625A19527A}|ConsoleTetris.vcxproj|D:\\Justin Sontopski\\ConsoleTetris\\ConsoleTetris\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A118E717-800C-4A6F-99A9-A9625A19527A}|ConsoleTetris.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A118E717-800C-4A6F-99A9-A9625A19527A}|ConsoleTetris.vcxproj|D:\\Justin Sontopski\\ConsoleTetris\\ConsoleTetris\\Tetrominos.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A118E717-800C-4A6F-99A9-A9625A19527A}|ConsoleTetris.vcxproj|solutionrelative:Tetrominos.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A118E717-800C-4A6F-99A9-A9625A19527A}|ConsoleTetris.vcxproj|D:\\Justin Sontopski\\ConsoleTetris\\ConsoleTetris\\Tetrominos.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A118E717-800C-4A6F-99A9-A9625A19527A}|ConsoleTetris.vcxproj|solutionrelative:Tetrominos.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A118E717-800C-4A6F-99A9-A9625A19527A}|ConsoleTetris.vcxproj|D:\\Justin Sontopski\\ConsoleTetris\\ConsoleTetris\\main.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A118E717-800C-4A6F-99A9-A9625A19527A}|ConsoleTetris.vcxproj|solutionrelative:main.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Tetrominos.h",
+              "DocumentMoniker": "D:\\Justin Sontopski\\ConsoleTetris\\ConsoleTetris\\Tetrominos.h",
+              "RelativeDocumentMoniker": "Tetrominos.h",
+              "ToolTip": "D:\\Justin Sontopski\\ConsoleTetris\\ConsoleTetris\\Tetrominos.h",
+              "RelativeToolTip": "Tetrominos.h",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-07T10:22:19.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Tetrominos.cpp",
+              "DocumentMoniker": "D:\\Justin Sontopski\\ConsoleTetris\\ConsoleTetris\\Tetrominos.cpp",
+              "RelativeDocumentMoniker": "Tetrominos.cpp",
+              "ToolTip": "D:\\Justin Sontopski\\ConsoleTetris\\ConsoleTetris\\Tetrominos.cpp",
+              "RelativeToolTip": "Tetrominos.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-07T10:22:04.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "main.h",
+              "DocumentMoniker": "D:\\Justin Sontopski\\ConsoleTetris\\ConsoleTetris\\main.h",
+              "RelativeDocumentMoniker": "main.h",
+              "ToolTip": "D:\\Justin Sontopski\\ConsoleTetris\\ConsoleTetris\\main.h",
+              "RelativeToolTip": "main.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-07T10:10:44.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\Justin Sontopski\\ConsoleTetris\\ConsoleTetris\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "D:\\Justin Sontopski\\ConsoleTetris\\ConsoleTetris\\main.cpp*",
+              "RelativeToolTip": "main.cpp*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-07T09:54:07.814Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
