@@ -2,8 +2,10 @@
 
 int main()
 {
-	TetrisGame game;
-	game.Run();
+	TetrisGame* game = new TetrisGame();
+	game->Run();
+	delete game;
+	game = nullptr;
 	return 0;
 }
 

@@ -7,8 +7,7 @@
 class TetrisGame 
 {
 private:
-
-	GameField gameField;
+	GameField* gameField;
 	Tetromino* currentTetromino;
 	int currentTetrominoType;
 	int currentRotation;
@@ -20,7 +19,7 @@ public:
 	void Run();
 	void SpawnNewTetromino();
 	void HandleInput();
-	void Update();
+	void UpdateTetrominoPosition();
 	void EndGame();
 };
 

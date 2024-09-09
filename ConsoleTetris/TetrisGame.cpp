@@ -1,4 +1,6 @@
 #include "TetrisGame.h"
+#include "GameField.h"
+#include "Tetromino.h"
 #include <iostream>
 #include <ctime>
 #include <cstdlib>
@@ -11,25 +13,25 @@ TetrisGame::TetrisGame()
 
 void TetrisGame::SpawnNewTetromino() 
 {
-	currentTetrominoType = std::rand() % 7;
+	currentTetrominoType = std::rand() % (TetrominoTypes::ENUM_MAX - 1);
 	currentRotation = 0;
-	currentPosX = 10 / 2 - 2;
+	currentPosX =  FIELD_WIDTH / 2;
 	currentPosY = 0;
 }
 
 void TetrisGame::Run() 
 {
+	system("cls");
+	gameField->DrawGameField();
 	bool isRunning = true;
 	while (isRunning)
 	{
-		system("cls");
-		gameField.DrawGameField();
-		gameField.PlaceTetromino(currentTetromino, currentTetrominoType, currentRotation, currentPosX, currentPosY);
-
+		gameField->PlaceTetromino(currentTetromino, currentTetrominoType, currentRotation, currentPosX, currentPosY);
 		HandleInput();
-		Update();
-		gameField.CheckAndClearLines();
+		UpdateTetrominoPosition();
+		gameField->CheckAndClearLines();
 	}
+	EndGame();
 }
 
 void TetrisGame::HandleInput()
@@ -37,12 +39,16 @@ void TetrisGame::HandleInput()
 	// TODO: Implementiere Eingabelogik für Bewegung (links/rechts) und Rotation
 }
 
-void TetrisGame::Update()
+void TetrisGame::UpdateTetrominoPosition()
 {
 	// currentPosY++;
 }
 
 void TetrisGame::EndGame()
 {
+	delete gameField;
+	delete currentTetromino;
+	gameField = nullptr;
+	currentTetromino = nullptr;
 	std::cout << "Game Over!" << std::endl;
 }
