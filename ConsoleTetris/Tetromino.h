@@ -9,15 +9,15 @@ public:
 	int GetTetrominoType(int Type, int Rotation, int X, int Y);
 };
 
-enum TetrominoTypes 
+enum class ETetrominoType : unsigned char
 {
-	O = 0,
-	I,
-	J,
-	L,
-	S,
-	Z,
-	T,
+	TT_O = 0,
+	TT_I,
+	TT_J,
+	TT_L,
+	TT_S,
+	TT_Z,
+	TT_T,
 	ENUM_MAX
 };
 

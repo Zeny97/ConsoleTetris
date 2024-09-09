@@ -13,7 +13,7 @@ TetrisGame::TetrisGame()
 
 void TetrisGame::SpawnNewTetromino() 
 {
-	currentTetrominoType = std::rand() % (TetrominoTypes::ENUM_MAX - 1);
+	currentTetrominoType = std::rand() % (int)ETetrominoType::ENUM_MAX;
 	currentRotation = 0;
 	currentPosX =  FIELD_WIDTH / 2;
 	currentPosY = 0;
