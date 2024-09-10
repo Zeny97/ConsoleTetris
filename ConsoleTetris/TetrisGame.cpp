@@ -1,7 +1,4 @@
 #include "TetrisGame.h"
-#include "GameField.h"
-#include "Tetromino.h"
-#include <iostream>
 #include <ctime>
 #include <cstdlib>
 
@@ -21,15 +18,16 @@ void TetrisGame::SpawnNewTetromino()
 
 void TetrisGame::Run() 
 {
-	system("cls");
-	gameField->DrawGameField();
+	GameField* gameField = new GameField;
 	bool isRunning = true;
 	while (isRunning)
 	{
-		gameField->PlaceTetromino(currentTetromino, currentTetrominoType, currentRotation, currentPosX, currentPosY);
+		system("cls");
+		gameField->DrawGameField();
+		/*gameField->PlaceTetromino(currentTetromino, currentTetrominoType, currentRotation, currentPosX, currentPosY);
 		HandleInput();
 		UpdateTetrominoPosition();
-		gameField->CheckAndClearLines();
+		gameField->CheckAndClearLines();*/
 	}
 	EndGame();
 }
@@ -41,7 +39,7 @@ void TetrisGame::HandleInput()
 
 void TetrisGame::UpdateTetrominoPosition()
 {
-	// currentPosY++;
+	// TODO: Implementiere Tetrominopositionsupdate nach x, wobei x für einen Zeitwert steht.
 }
 
 void TetrisGame::EndGame()

@@ -9,12 +9,9 @@
 
 class GameField
 {
-private:
-	int gameField[20][10];
-
 public:
+	unsigned char gameField[FIELD_HEIGHT][FIELD_WIDTH];
 	GameField();
-	void Init();
 	void DrawGameField();
 	void PlaceTetromino(Tetromino* tetromino, int type, int rotation, int posX, int posY);
 	void ClearField();

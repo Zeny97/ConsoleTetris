@@ -1,8 +1,2 @@
 ﻿  GameField.cpp
-C:\Users\jsontopski\Documents\Games Programming\C++\ConsoleTetris\ConsoleTetris\GameField.cpp(24,18): warning C4566: Das durch den universellen Zeichennamen "\u2588" dargestellte Zeichen kann in der aktuellen Codepage (1252) nicht dargestellt werden.
-  TetrisGame.cpp
-C:\Users\jsontopski\Documents\Games Programming\C++\ConsoleTetris\ConsoleTetris\TetrisGame.cpp(10,22): warning C4244: "Argument": Konvertierung von "time_t" in "unsigned int", möglicher Datenverlust
-  Tetromino.cpp
-  main.cpp
-  Code wird generiert...
   ConsoleTetris.vcxproj -> C:\Users\jsontopski\Documents\Games Programming\C++\ConsoleTetris\ConsoleTetris\x64\Debug\ConsoleTetris.exe

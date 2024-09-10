@@ -7,7 +7,8 @@ GameField::GameField()
 	{
 		for (int x = 0; x < FIELD_WIDTH; x++)
 		{
-			gameField[y][x] = 0;
+
+			gameField[y][x] = 1;
 		}
 	}
 }
@@ -21,14 +22,15 @@ void GameField::DrawGameField()
 		{
 			if(gameField[y][x] == 1)
 			{
-				std::cout << "██";
+				//std::cout << u8"\u2588";
+				std::cout << L"█";
 			}
 			else
 			{
-				std::cout << "  ";
+				std::cout << "O";
 			}
-			std::cout << std::endl;
 		}
+		std::cout << std::endl;
 	}
 }
 
