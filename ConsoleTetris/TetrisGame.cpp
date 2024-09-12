@@ -1,11 +1,20 @@
 #include "TetrisGame.h"
+#include "ConsoleScreen.h"
 #include <ctime>
 #include <cstdlib>
+#include <WinUser.h>
 
 TetrisGame::TetrisGame() 
 {
-	std::srand(std::time(nullptr));
+	std::srand(static_cast<unsigned>(std::time(nullptr)));
 	SpawnNewTetromino();
+}
+
+void TetrisGame::Init()
+{
+	ConsoleScreen* consoleScreen = new ConsoleScreen;
+
+	GameField* gameField = new GameField;
 }
 
 void TetrisGame::SpawnNewTetromino() 
@@ -18,11 +27,11 @@ void TetrisGame::SpawnNewTetromino()
 
 void TetrisGame::Run() 
 {
-	GameField* gameField = new GameField;
+
 	bool isRunning = true;
+	system("cls");
 	while (isRunning)
 	{
-		system("cls");
 		gameField->DrawGameField();
 		/*gameField->PlaceTetromino(currentTetromino, currentTetrominoType, currentRotation, currentPosX, currentPosY);
 		HandleInput();
@@ -34,11 +43,29 @@ void TetrisGame::Run()
 
 void TetrisGame::HandleInput()
 {
-	// TODO: Implementiere Eingabelogik für Bewegung (links/rechts) und Rotation
+	if (GetAsyncKeyState(VK_LEFT)){
+		UpdateTetrominoPosition();
+	}
+	else if (GetAsyncKeyState(VK_RIGHT)){
+		UpdateTetrominoPosition();
+	}
+	else if (GetAsyncKeyState(VK_UP)) {
+		UpdateTetrominoPosition();
+	}
+	else if (GetAsyncKeyState(VK_DOWN)) {
+		UpdateTetrominoPosition();
+	}
+	else if (GetAsyncKeyState(0x58)) {
+		UpdateTetrominoPosition();
+	}
+	else if (GetAsyncKeyState(0x59)) {
+		UpdateTetrominoPosition();
+	}
 }
 
 void TetrisGame::UpdateTetrominoPosition()
 {
+
 	// TODO: Implementiere Tetrominopositionsupdate nach x, wobei x für einen Zeitwert steht.
 }
 

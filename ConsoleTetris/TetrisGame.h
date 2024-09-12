@@ -7,15 +7,16 @@
 class TetrisGame 
 {
 private:
-	GameField* gameField;
-	Tetromino* currentTetromino;
-	int currentTetrominoType;
-	int currentRotation;
-	int currentPosX;
-	int currentPosY;
+	GameField* gameField = nullptr;
+	Tetromino* currentTetromino = nullptr;
+	int currentTetrominoType = 0;
+	int currentRotation = 0;
+	int currentPosX = 0;
+	int currentPosY = 0;
 
 public:
 	TetrisGame();
+	void Init();
 	void Run();
 	void SpawnNewTetromino();
 	void HandleInput();
