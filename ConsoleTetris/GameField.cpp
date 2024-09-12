@@ -22,8 +22,7 @@ void GameField::DrawGameField()
 		{
 			if(gameField[y][x] == 1)
 			{
-				//std::cout << u8"\u2588";
-				std::cout << L"█";
+				/std::cout << u8"\u2588";
 			}
 			else
 			{

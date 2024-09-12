@@ -5,14 +5,13 @@
 #include <thread>
 #include <vector>
 
-class ConsoleScreen
-{
+#define CONSOLE_SCREEN_WIDTH 60
+#define CONSOLE_SCREEN_HEIGHT 30
+
+class ConsoleScreen{
 public:
-    ConsoleScreen(int, int);
-    const int m_iconsoleScreenWidth;
-    const int m_iconsoleScreenHeight;
-    wchar_t* consoleScreen;
-    HANDLE hConsole;
+    ConsoleScreen();
+    void PrintConsoleScreen();
 };
 #endif
 
