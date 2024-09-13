@@ -1,7 +1,5 @@
-#include "TetrisGame.h"
-#include <ctime>
-#include <cstdlib>
-#include <WinUser.h>
+﻿#include "TetrisGame.h"
+#include "Macros.h"
 
 TetrisGame::TetrisGame(){
 	std::srand(std::time(nullptr));
@@ -16,23 +14,23 @@ void TetrisGame::SpawnNewTetromino(){
 }
 
 void TetrisGame::Init(){
-	ConsoleScreen* consoleScreen = new ConsoleScreen;
+	CLEAR_SCREEN;
 	GameField* gameField = new GameField;
-
-	consoleScreen->PrintConsoleScreen();
+	gameField->InitGameField();
+	gameField->DrawGamefield();
 }
 
 void TetrisGame::Run(){
 	
-	bool isRunning = true;
-	while (isRunning)
-	{
-		gameField->PlaceTetromino(currentTetromino, currentTetrominoType, currentRotation, currentPosX, currentPosY);
-		HandleInput();
-		UpdateTetrominoPosition();
-		gameField->CheckAndClearLines();
-	}
-	EndGame();
+	//bool isRunning = true;
+	//while (isRunning)
+	//{
+	//	gameField->PlaceTetromino(currentTetromino, currentTetrominoType, currentRotation, currentPosX, currentPosY);
+	//	HandleInput();
+	//	UpdateTetrominoPosition();
+	//	gameField->CheckAndClearLines();
+	//}
+	//EndGame();
 }
 
 void TetrisGame::HandleInput(){
@@ -57,7 +55,7 @@ void TetrisGame::HandleInput(){
 }
 
 void TetrisGame::UpdateTetrominoPosition(){
-	// TODO: Implementiere Tetrominopositionsupdate nach x, wobei x f�r einen Zeitwert steht.
+	// TODO: Implementiere Tetrominopositionsupdate nach x, wobei x für einen Zeitwert steht.
 }
 
 void TetrisGame::EndGame(){

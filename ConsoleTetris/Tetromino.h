@@ -1,7 +1,6 @@
 #ifndef TETROMINOS_H
 #define TETROMINOS_H
 
-
 class Tetromino
 {
 public:

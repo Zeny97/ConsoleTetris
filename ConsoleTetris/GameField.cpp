@@ -1,32 +1,34 @@
 ﻿#include "GameField.h"
+#include "Macros.h"
 
 GameField::GameField() 
 {
-	// Initialize the GameField with 0 (empty spaces)
-	for (int y = 0; y < FIELD_HEIGHT; y++)
-	{
-		for (int x = 0; x < FIELD_WIDTH; x++)
-		{
 
-			gameField[y][x] = 1;
+}
+
+void GameField::InitGameField()
+{
+	for (int y = 0; y < GAMEFIELD_AREA_HEIGHT; y++)
+	{
+		for (int x = 0; x < GAMEFIELD_AREA_WIDTH; x++)
+		{
+			playfieldArea[y][x] = 1;
 		}
+		std::cout << std::endl;
 	}
 }
 
-void GameField::DrawGameField()
+void GameField::DrawGamefield()
 {
+	SetCursorPos(1, 5);
 	// Initialize the GameField with 0 (empty spaces)
 	for (int y = 0; y < FIELD_HEIGHT; y++)
 	{
 		for (int x = 0; x < FIELD_WIDTH; x++)
 		{
-			if(gameField[y][x] == 1)
+			if (playfield[y][x] == 1)
 			{
-				/std::cout << u8"\u2588";
-			}
-			else
-			{
-				std::cout << "O";
+				std::cout << " ";
 			}
 		}
 		std::cout << std::endl;
@@ -43,7 +45,7 @@ void GameField::PlaceTetromino(Tetromino* tetromino, int type, int rotation, int
 			if (tetromino->GetTetrominoType(type,rotation,posX,posY) == 1)
 			{
 				if (posY + y < 20 && posX + x < 10)
-					gameField[posY + y][posX + x] = 1;
+					playfield[posY + y][posX + x] = 1;
 			}
 		}
 	}
@@ -54,10 +56,63 @@ void GameField::ClearField()
 	// Setze das Spielfeld zurück (auf 0)
 	for (int y = 0; y < FIELD_HEIGHT; y++)
 		for (int x = 0; x < FIELD_WIDTH; x++)
-			gameField[y][x] = 0;
+			playfield[y][x] = 0;
 }
 
 void GameField::CheckAndClearLines()
 {
 	// TODO: Überprüfe das Spielfeld und lösche volle Reihen
 }
+
+void GameField::PrintTetrisGamePlayfield()
+{
+	std::cout << "████████████";
+	std::cout << "████████████";
+	std::cout << "████████████";
+	std::cout << "████████████";
+	std::cout << "█          █";
+	std::cout << "█          █";
+	std::cout << "█          █";
+	std::cout << "█          █";
+	std::cout << "█          █";
+	std::cout << "█          █";
+	std::cout << "█          █";
+	std::cout << "█          █";
+	std::cout << "█          █";
+	std::cout << "█          █";
+	std::cout << "█          █";
+	std::cout << "█          █";
+	std::cout << "█          █";
+	std::cout << "█          █";
+	std::cout << "█          █";
+	std::cout << "█          █";
+	std::cout << "█          █";
+	std::cout << "████████████";
+}
+
+void GameField::PrintTetrisGameInfo()
+{
+	std::cout << "██████████████████████";
+	std::cout << "█                    █";
+	std::cout << "█  Justins Tetris    █";
+	std::cout << "█                    █";
+	std::cout << "█  Controls :        █";
+	std::cout << "█                    █";
+	std::cout << "█  Move : ← →        █";
+	std::cout << "█  Rotate : y, x     █";
+	std::cout << "█  Drop : ↓          █";
+	std::cout << "█  Hard Drop : ↑     █";
+	std::cout << "█                    █";
+	std::cout << "█  Next Piece :      █";
+	std::cout << "█                    █";
+	std::cout << "█                    █";
+	std::cout << "█                    █";
+	std::cout << "█  Score :           █";
+	std::cout << "█                    █";
+	std::cout << "█  Lvl : [01]        █";
+	std::cout << "█  Lines : [00 / 00] █";
+	std::cout << "█  Time : [00:00]    █";
+	std::cout << "█                    █";
+	std::cout << "██████████████████████";
+}
+

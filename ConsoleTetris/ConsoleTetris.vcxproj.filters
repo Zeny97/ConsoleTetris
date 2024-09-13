@@ -27,7 +27,7 @@
     <ClCompile Include="TetrisGame.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ConsoleScreen.cpp">
+    <ClCompile Include="ConsoleScreenConfig.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -44,7 +44,10 @@
     <ClInclude Include="TetrisGame.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ConsoleScreen.h">
+    <ClInclude Include="ConsoleScreenConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Macros.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

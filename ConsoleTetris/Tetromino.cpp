@@ -1,4 +1,5 @@
 #include "Tetromino.h"
+#include "Macros.h"
 
 char defTetrominos[7 /* type */][4 /*rotation */][4 /* horizontal */][4 /* vertical */] =
 {

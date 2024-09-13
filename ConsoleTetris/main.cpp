@@ -1,19 +1,17 @@
-#include <iostream>
-#include <windows.h>
 #include "main.h"
-#include "TetrisGame.h"
-
-#define DELETE_POINTER(pointer) delete pointer; pointer = nullptr
-#define PRINT_STUFF_HERE(X,Y) printf("\033[%d;%dH",Y,X)
-#define CLEAR_SCREEN system("cls")
+#include "Macros.h"
 
 int main(){
-	SetConsoleOutputCP(CP_UTF8);
-	CLEAR_SCREEN;
 
+	CLEAR_SCREEN;
+	SetConsoleOutputCP(CP_UTF8);
+
+	ConsoleScreenConfig* config = new ConsoleScreenConfig;
+	config->SetConsoleScreenFont(32, 32, L"Terminal");
+	DELETE_POINTER(config);
+	
 	TetrisGame* game = new TetrisGame();
 	game->Init();
-
 	DELETE_POINTER(game);
 	return 0;
 }
