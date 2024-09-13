@@ -22,7 +22,5 @@ public:
 	void PlaceTetromino(Tetromino* tetromino, int type, int rotation, int posX, int posY);
 	void ClearField();
 	void CheckAndClearLines();
-	void PrintTetrisGamePlayfield();
-	void PrintTetrisGameInfo();
 };
 #endif

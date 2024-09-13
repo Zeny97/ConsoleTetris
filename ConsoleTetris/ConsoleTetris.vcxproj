@@ -127,14 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ConsoleScreenConfig.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="GameField.cpp" />
     <ClCompile Include="TetrisGame.cpp" />
     <ClCompile Include="Tetromino.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ConsoleScreenConfig.h" />
     <ClInclude Include="Macros.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="GameField.h" />

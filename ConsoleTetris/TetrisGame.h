@@ -1,9 +1,10 @@
 #ifndef TETRISGAME_H
-#define TETRISGAME_G
+#define TETRISGAME_H
 
 #include "GameField.h"
 #include "Tetromino.h"
 #include <WinUser.h>
+#include <vector>
 
 class TetrisGame 
 {

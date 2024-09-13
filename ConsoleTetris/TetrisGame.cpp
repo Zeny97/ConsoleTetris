@@ -16,21 +16,20 @@ void TetrisGame::SpawnNewTetromino(){
 void TetrisGame::Init(){
 	CLEAR_SCREEN;
 	GameField* gameField = new GameField;
-	gameField->InitGameField();
 	gameField->DrawGamefield();
 }
 
 void TetrisGame::Run(){
 	
-	//bool isRunning = true;
-	//while (isRunning)
-	//{
-	//	gameField->PlaceTetromino(currentTetromino, currentTetrominoType, currentRotation, currentPosX, currentPosY);
-	//	HandleInput();
-	//	UpdateTetrominoPosition();
-	//	gameField->CheckAndClearLines();
-	//}
-	//EndGame();
+	bool isRunning = true;
+	while (isRunning)
+	{
+		gameField->PlaceTetromino(currentTetromino, currentTetrominoType, currentRotation, currentPosX, currentPosY);
+		/*HandleInput();
+		UpdateTetrominoPosition();
+		gameField->CheckAndClearLines();*/
+	}
+	EndGame();
 }
 
 void TetrisGame::HandleInput(){

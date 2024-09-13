@@ -1,14 +1,12 @@
 #ifndef TETROMINOS_H
 #define TETROMINOS_H
 
-class Tetromino
-{
+class Tetromino{
 public:
 	int GetTetrominoType(int Type, int Rotation, int X, int Y);
 };
 
-enum class ETetrominoType : unsigned char
-{
+enum class ETetrominoType : unsigned char{
 	TT_O = 0,
 	TT_I,
 	TT_J,
