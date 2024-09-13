@@ -2,19 +2,24 @@
 #define TETRISGAME_G
 
 #include "GameField.h"
+#include "ConsoleScreen.h"
 #include "Tetromino.h"
+
+#define DELETE_POINTER(pointer) delete pointer; pointer = nullptr
+#define PRINT_STUFF_HERE(X,Y) printf("\033[%d;%dH",Y,X)
 
 class TetrisGame 
 {
-private:
-	GameField* gameField = nullptr;
-	Tetromino* currentTetromino = nullptr;
-	int currentTetrominoType = 0;
-	int currentRotation = 0;
-	int currentPosX = 0;
-	int currentPosY = 0;
-
 public:
+	GameField* gameField;
+	ConsoleScreen* consoleScreen;
+	Tetromino* currentTetromino;
+
+	int currentTetrominoType;
+	int currentRotation;
+	int currentPosX;
+	int currentPosY;
+
 	TetrisGame();
 	void Init();
 	void Run();

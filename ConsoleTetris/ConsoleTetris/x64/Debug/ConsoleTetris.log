@@ -1,2 +1,10 @@
-﻿  TetrisGame.cpp
-  ConsoleTetris.vcxproj -> C:\Users\jsontopski\Documents\Games Programming\C++\ConsoleTetris\ConsoleTetris\x64\Debug\ConsoleTetris.exe
+﻿  ConsoleScreen.cpp
+  main.cpp
+  GameField.cpp
+  TetrisGame.cpp
+D:\Games  Programming\C++\ConsoleTetris\ConsoleTetris\TetrisGame.cpp(7,22): warning C4244: "Argument": Konvertierung von "time_t" in "unsigned int", möglicher Datenverlust
+  Tetromino.cpp
+  Code wird generiert...
+  ConsoleTetris.vcxproj -> D:\Games  Programming\C++\ConsoleTetris\ConsoleTetris\x64\Debug\ConsoleTetris.exe
+  Der Befehl "pwsh.exe" ist entweder falsch geschrieben oder
+  konnte nicht gefunden werden.

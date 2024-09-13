@@ -1,13 +1,63 @@
-#include "ConsoleScreen.h"
+﻿#include "ConsoleScreen.h"
+#include <iostream>
 
-ConsoleScreen::ConsoleScreen()
-{
+ConsoleScreen::ConsoleScreen(){
+
 }
 
-ConsoleScreen::ConsoleScreen(int iscreenWidth, int iscreenHeight) : m_iconsoleScreenWidth(iscreenWidth), m_iconsoleScreenHeight(iscreenHeight)
-{
-    consoleScreen = new wchar_t[iscreenWidth * iscreenHeight];
-    for (int i = 0; i < iscreenWidth * iscreenHeight; i++) consoleScreen[i] = L' ';
-    hConsole = CreateConsoleScreenBuffer(GENERIC_READ | GENERIC_WRITE, 0, NULL, CONSOLE_TEXTMODE_BUFFER, NULL);
-    SetConsoleActiveScreenBuffer(hConsole);
+void ConsoleScreen::PrintConsoleScreen(){
+	std::cout << "██████████████████████████████████████████████\n";
+	std::cout << "████████████████████████                    ██\n";
+	std::cout << "████████████████████████  Justins Tetris    ██\n";
+	std::cout << "████████████████████████                    ██\n";
+	std::cout << "██                    ██  Controls :        ██\n";
+	std::cout << "██                    ██                    ██\n";
+	std::cout << "██                    ██  Move : ← →        ██\n";
+	std::cout << "██                    ██  Rotate : y, x     ██\n";
+	std::cout << "██                    ██  Drop : ↓          ██\n";
+	std::cout << "██                    ██  Hard Drop : ↑	  ██\n";
+	std::cout << "██                    ██                    ██\n";
+	std::cout << "██                    ██  Next Piece :      ██\n";
+	std::cout << "██                    ██                    ██\n";
+	std::cout << "██                    ██                    ██\n";
+	std::cout << "██                    ██                    ██\n";
+	std::cout << "██                    ██  Score :           ██\n";
+	std::cout << "██                    ██                    ██\n";
+	std::cout << "██                    ██  Lvl : [01]        ██\n";
+	std::cout << "██                    ██  Lines :[00/00]    ██\n";
+	std::cout << "██                    ██  Time : [00:00]    ██\n";
+	std::cout << "██                    ██                    ██\n";
+	std::cout << "██████████████████████████████████████████████\n";
+}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 }
