@@ -3,40 +3,24 @@
   "WorkspaceRootPath": "D:\\Games  Programming\\C\u002B\u002B\\ConsoleTetris\\ConsoleTetris\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A118E717-800C-4A6F-99A9-A9625A19527A}|ConsoleTetris.vcxproj|D:\\Games  Programming\\C\u002B\u002B\\ConsoleTetris\\ConsoleTetris\\Tetromino.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A118E717-800C-4A6F-99A9-A9625A19527A}|ConsoleTetris.vcxproj|solutionrelative:Tetromino.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A118E717-800C-4A6F-99A9-A9625A19527A}|ConsoleTetris.vcxproj|D:\\Games  Programming\\C\u002B\u002B\\ConsoleTetris\\ConsoleTetris\\TetrisGame.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A118E717-800C-4A6F-99A9-A9625A19527A}|ConsoleTetris.vcxproj|solutionrelative:TetrisGame.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A118E717-800C-4A6F-99A9-A9625A19527A}|ConsoleTetris.vcxproj|D:\\Games  Programming\\C\u002B\u002B\\ConsoleTetris\\ConsoleTetris\\Macros.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A118E717-800C-4A6F-99A9-A9625A19527A}|ConsoleTetris.vcxproj|solutionrelative:Macros.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A118E717-800C-4A6F-99A9-A9625A19527A}|ConsoleTetris.vcxproj|D:\\Games  Programming\\C\u002B\u002B\\ConsoleTetris\\ConsoleTetris\\TetrisGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A118E717-800C-4A6F-99A9-A9625A19527A}|ConsoleTetris.vcxproj|solutionrelative:TetrisGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A118E717-800C-4A6F-99A9-A9625A19527A}|ConsoleTetris.vcxproj|D:\\Games  Programming\\C\u002B\u002B\\ConsoleTetris\\ConsoleTetris\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A118E717-800C-4A6F-99A9-A9625A19527A}|ConsoleTetris.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A118E717-800C-4A6F-99A9-A9625A19527A}|ConsoleTetris.vcxproj|D:\\Games  Programming\\C\u002B\u002B\\ConsoleTetris\\ConsoleTetris\\GameField.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A118E717-800C-4A6F-99A9-A9625A19527A}|ConsoleTetris.vcxproj|solutionrelative:GameField.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A118E717-800C-4A6F-99A9-A9625A19527A}|ConsoleTetris.vcxproj|D:\\Games  Programming\\C\u002B\u002B\\ConsoleTetris\\ConsoleTetris\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A118E717-800C-4A6F-99A9-A9625A19527A}|ConsoleTetris.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A118E717-800C-4A6F-99A9-A9625A19527A}|ConsoleTetris.vcxproj|D:\\Games  Programming\\C\u002B\u002B\\ConsoleTetris\\ConsoleTetris\\main.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A118E717-800C-4A6F-99A9-A9625A19527A}|ConsoleTetris.vcxproj|solutionrelative:main.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A118E717-800C-4A6F-99A9-A9625A19527A}|ConsoleTetris.vcxproj|D:\\Games  Programming\\C\u002B\u002B\\ConsoleTetris\\ConsoleTetris\\TetrisGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A118E717-800C-4A6F-99A9-A9625A19527A}|ConsoleTetris.vcxproj|solutionrelative:TetrisGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A118E717-800C-4A6F-99A9-A9625A19527A}|ConsoleTetris.vcxproj|D:\\Games  Programming\\C\u002B\u002B\\ConsoleTetris\\ConsoleTetris\\GameField.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A118E717-800C-4A6F-99A9-A9625A19527A}|ConsoleTetris.vcxproj|solutionrelative:GameField.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A118E717-800C-4A6F-99A9-A9625A19527A}|ConsoleTetris.vcxproj|D:\\Games  Programming\\C\u002B\u002B\\ConsoleTetris\\ConsoleTetris\\Tetromino.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A118E717-800C-4A6F-99A9-A9625A19527A}|ConsoleTetris.vcxproj|solutionrelative:Tetromino.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A118E717-800C-4A6F-99A9-A9625A19527A}|ConsoleTetris.vcxproj|D:\\Games  Programming\\C\u002B\u002B\\ConsoleTetris\\ConsoleTetris\\Tetromino.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A118E717-800C-4A6F-99A9-A9625A19527A}|ConsoleTetris.vcxproj|solutionrelative:Tetromino.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 225,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,125 +46,66 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "GameField.h",
+              "DocumentMoniker": "D:\\Games  Programming\\C\u002B\u002B\\ConsoleTetris\\ConsoleTetris\\GameField.h",
+              "RelativeDocumentMoniker": "GameField.h",
+              "ToolTip": "D:\\Games  Programming\\C\u002B\u002B\\ConsoleTetris\\ConsoleTetris\\GameField.h",
+              "RelativeToolTip": "GameField.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-14T17:16:21.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Tetromino.cpp",
               "DocumentMoniker": "D:\\Games  Programming\\C\u002B\u002B\\ConsoleTetris\\ConsoleTetris\\Tetromino.cpp",
               "RelativeDocumentMoniker": "Tetromino.cpp",
               "ToolTip": "D:\\Games  Programming\\C\u002B\u002B\\ConsoleTetris\\ConsoleTetris\\Tetromino.cpp",
               "RelativeToolTip": "Tetromino.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAALwAAAAAAAAAAAAiwOIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-13T17:46:50.182Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-13T17:46:50.182Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Macros.h",
-              "DocumentMoniker": "D:\\Games  Programming\\C\u002B\u002B\\ConsoleTetris\\ConsoleTetris\\Macros.h",
-              "RelativeDocumentMoniker": "Macros.h",
-              "ToolTip": "D:\\Games  Programming\\C\u002B\u002B\\ConsoleTetris\\ConsoleTetris\\Macros.h",
-              "RelativeToolTip": "Macros.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-13T17:31:29.848Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "TetrisGame.cpp",
               "DocumentMoniker": "D:\\Games  Programming\\C\u002B\u002B\\ConsoleTetris\\ConsoleTetris\\TetrisGame.cpp",
               "RelativeDocumentMoniker": "TetrisGame.cpp",
               "ToolTip": "D:\\Games  Programming\\C\u002B\u002B\\ConsoleTetris\\ConsoleTetris\\TetrisGame.cpp",
               "RelativeToolTip": "TetrisGame.cpp",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAE4AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-08T15:48:19.328Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "GameField.cpp",
               "DocumentMoniker": "D:\\Games  Programming\\C\u002B\u002B\\ConsoleTetris\\ConsoleTetris\\GameField.cpp",
               "RelativeDocumentMoniker": "GameField.cpp",
               "ToolTip": "D:\\Games  Programming\\C\u002B\u002B\\ConsoleTetris\\ConsoleTetris\\GameField.cpp",
               "RelativeToolTip": "GameField.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-07T12:53:07.16Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "main.cpp",
               "DocumentMoniker": "D:\\Games  Programming\\C\u002B\u002B\\ConsoleTetris\\ConsoleTetris\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "D:\\Games  Programming\\C\u002B\u002B\\ConsoleTetris\\ConsoleTetris\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-13T12:30:16.664Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 209,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "main.h",
-              "DocumentMoniker": "D:\\Games  Programming\\C\u002B\u002B\\ConsoleTetris\\ConsoleTetris\\main.h",
-              "RelativeDocumentMoniker": "main.h",
-              "ToolTip": "D:\\Games  Programming\\C\u002B\u002B\\ConsoleTetris\\ConsoleTetris\\main.h",
-              "RelativeToolTip": "main.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-13T13:10:46.62Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TetrisGame.h",
-              "DocumentMoniker": "D:\\Games  Programming\\C\u002B\u002B\\ConsoleTetris\\ConsoleTetris\\TetrisGame.h",
-              "RelativeDocumentMoniker": "TetrisGame.h",
-              "ToolTip": "D:\\Games  Programming\\C\u002B\u002B\\ConsoleTetris\\ConsoleTetris\\TetrisGame.h",
-              "RelativeToolTip": "TetrisGame.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-08T15:48:34.641Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Tetromino.h",
-              "DocumentMoniker": "D:\\Games  Programming\\C\u002B\u002B\\ConsoleTetris\\ConsoleTetris\\Tetromino.h",
-              "RelativeDocumentMoniker": "Tetromino.h",
-              "ToolTip": "D:\\Games  Programming\\C\u002B\u002B\\ConsoleTetris\\ConsoleTetris\\Tetromino.h",
-              "RelativeToolTip": "Tetromino.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-13T17:24:46.813Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GameField.h",
-              "DocumentMoniker": "D:\\Games  Programming\\C\u002B\u002B\\ConsoleTetris\\ConsoleTetris\\GameField.h",
-              "RelativeDocumentMoniker": "GameField.h",
-              "ToolTip": "D:\\Games  Programming\\C\u002B\u002B\\ConsoleTetris\\ConsoleTetris\\GameField.h",
-              "RelativeToolTip": "GameField.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-13T17:28:02.111Z",
               "EditorCaption": ""
             }
           ]

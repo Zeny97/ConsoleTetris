@@ -16,6 +16,4 @@ enum class ETetrominoType : unsigned char{
 	TT_T,
 	ENUM_MAX
 };
-
 #endif
-

@@ -24,6 +24,6 @@ public:
 	void HandleInput();
 	void UpdateTetrominoPosition();
 	void EndGame();
+	void DrawCurrentTetromino(bool clear = false);
 };
-
 #endif

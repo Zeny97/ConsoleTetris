@@ -1,22 +1,28 @@
 ﻿#include "TetrisGame.h"
 #include "Macros.h"
+#include <Windows.h>
+#include <ctime>
 
 TetrisGame::TetrisGame(){
+	gameField = nullptr;
+	currentTetromino = nullptr;
 	std::srand(std::time(nullptr));
-	SpawnNewTetromino();
 }
 
 void TetrisGame::SpawnNewTetromino(){
 	currentTetrominoType = std::rand() % (int)ETetrominoType::ENUM_MAX;
 	currentRotation = 0;
-	currentPosX =  FIELD_WIDTH / 2;
+	currentPosX =  FIELD_WIDTH / 2 - 2;
 	currentPosY = 0;
+	currentTetromino = new Tetromino();
 }
 
 void TetrisGame::Init(){
 	CLEAR_SCREEN;
-	GameField* gameField = new GameField;
+	gameField = new GameField();
+	gameField->InitializeGamefield();
 	gameField->DrawGamefield();
+	SpawnNewTetromino();
 }
 
 void TetrisGame::Run(){
@@ -24,26 +30,36 @@ void TetrisGame::Run(){
 	bool isRunning = true;
 	while (isRunning)
 	{
-		gameField->PlaceTetromino(currentTetromino, currentTetrominoType, currentRotation, currentPosX, currentPosY);
-		/*HandleInput();
+		DrawCurrentTetromino();
+		HandleInput();
+		gameField->CheckAndClearLines();
+		Sleep(500);
 		UpdateTetrominoPosition();
-		gameField->CheckAndClearLines();*/
 	}
 	EndGame();
 }
 
 void TetrisGame::HandleInput(){
-	if (GetAsyncKeyState(VK_LEFT)){
-
+	if (GetAsyncKeyState(VK_LEFT)) {
+		// Move left
+		DrawCurrentTetromino(true); // Clear previous position
+		currentPosX = max(0, currentPosX - 1);
 	}
-	else if (GetAsyncKeyState(VK_RIGHT)){
-
+	else if (GetAsyncKeyState(VK_RIGHT)) {
+		// Move right
+		DrawCurrentTetromino(true); // Clear previous position
+		currentPosX = min(FIELD_WIDTH - 4, currentPosX + 1);
 	}
-	else if (GetAsyncKeyState(VK_UP)){
-
+	else if (GetAsyncKeyState(VK_DOWN)) {
+		// Drop faster
+		DrawCurrentTetromino(true); // Clear previous position
+		currentPosY = min(FIELD_HEIGHT - 4, currentPosY + 1);
 	}
-	else if (GetAsyncKeyState(VK_DOWN)){
-
+	else if (GetAsyncKeyState(VK_UP)) {
+		// Hard drop
+		DrawCurrentTetromino(true); // Clear previous position
+		while (currentPosY < FIELD_HEIGHT - 4)
+			currentPosY++;
 	}
 	else if (GetAsyncKeyState(0x58)){ // X Key
 
@@ -54,7 +70,22 @@ void TetrisGame::HandleInput(){
 }
 
 void TetrisGame::UpdateTetrominoPosition(){
-	// TODO: Implementiere Tetrominopositionsupdate nach x, wobei x für einen Zeitwert steht.
+	// Move tetromino down by default
+	DrawCurrentTetromino(true); // Clear previous position
+	currentPosY = min(FIELD_HEIGHT - 4, currentPosY + 1);
+}
+
+void TetrisGame::DrawCurrentTetromino(bool clear) {
+	char block = clear ? ' ' : (char)u8"\u2588"; // Clear with space or draw with block
+	for (int y = 0; y < 4; y++) {
+		for (int x = 0; x < 4; x++) {
+			if (currentTetromino->GetTetrominoType(currentTetrominoType, currentRotation, x, y) == 1) {
+				COORD pos = { (short)(currentPosX + x), (short)(currentPosY + y) };
+				SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+				std::cout << block;
+			}
+		}
+	}
 }
 
 void TetrisGame::EndGame(){

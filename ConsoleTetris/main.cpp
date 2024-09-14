@@ -40,6 +40,3 @@ void SetConsoleScreenFont(int width, int height, const wchar_t* fontName)
 	// Set the console font using SetCurrentConsoleFontEx
 	SetCurrentConsoleFontEx(consoleHandle, FALSE, &cfi);
 }
-
-
-

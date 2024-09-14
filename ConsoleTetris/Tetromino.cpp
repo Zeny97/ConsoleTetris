@@ -225,4 +225,3 @@ char defTetrominos[7 /* type */][4 /*rotation */][4 /* horizontal */][4 /* verti
 int Tetromino::GetTetrominoType(int Type, int Rotation, int X, int Y){
 	return defTetrominos[Type][Rotation][X][Y];
 }
-

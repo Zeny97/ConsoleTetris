@@ -2,36 +2,25 @@
 #include "Macros.h"
 
 GameField::GameField(){
+	// No need to allocate memory, arrays are automatically allocated on stack
+}
 
+void GameField::InitializeGamefield()
+{
+	for (int y = 0; y < FIELD_HEIGHT; y++){
+		for (int x = 0; x < FIELD_WIDTH; x++){
+			gamefield[y][x] = ' ';
+		}
+	}
 }
 
 void GameField::DrawGamefield(){
-	for (int y = 0; y < FIELD_HEIGHT; y++)
-	{
-		for (int x = 0; x < FIELD_WIDTH; x++)
-		{
-			playfield[y][x] = ' ';
+	for (int y = 0; y < FIELD_HEIGHT - 1; y++){
+		for (int x = 0; x < FIELD_WIDTH - 1; x++){
+			std::cout << gamefield[y][x];
 		}
 		std::cout << std::endl;
 	}
-}
-
-void GameField::PlaceTetromino(Tetromino* tetromino, int type, int rotation, int posX, int posY){
-	//Setze das Tetromino auf das Spielfeld
-	for (int y = 0; y < 4; y++)
-	{
-		for (int x = 0; x < 4; x++)
-		{
-
-		}
-	}
-}
-
-void GameField::ClearField(){
-	// Setze das Spielfeld zurück (auf 0)
-	for (int y = 0; y < FIELD_HEIGHT; y++)
-		for (int x = 0; x < FIELD_WIDTH; x++)
-			playfield[y][x] = 0;
 }
 
 void GameField::CheckAndClearLines(){
