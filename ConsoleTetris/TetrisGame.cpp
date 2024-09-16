@@ -10,7 +10,7 @@ TetrisGame::TetrisGame(){
 }
 
 void TetrisGame::SpawnNewTetromino(){
-	currentTetrominoType = std::rand() % (int)ETetrominoType::ENUM_MAX;
+	currentTetrominoType = 1;//std::rand() % (int)ETetrominoType::ENUM_MAX;
 	currentRotation = 0;
 	currentPosX =  FIELD_WIDTH / 2 - 2;
 	currentPosY = 0;
@@ -62,10 +62,18 @@ void TetrisGame::HandleInput(){
 			currentPosY++;
 	}
 	else if (GetAsyncKeyState(0x58)){ // X Key
-
+		if (currentRotation == 3){
+			currentRotation = 0;
+			return;
+		}
+		currentRotation++;
 	}
 	else if (GetAsyncKeyState(0x59)){ // Y Key
-
+		if (currentRotation == 0) {
+			currentRotation = 3;
+			return;
+		}
+		currentRotation = 3;
 	}
 }
 
@@ -76,10 +84,10 @@ void TetrisGame::UpdateTetrominoPosition(){
 }
 
 void TetrisGame::DrawCurrentTetromino(bool clear) {
-	char block = clear ? ' ' : (char)u8"\u2588"; // Clear with space or draw with block
+	char block = clear ? ' ' : '\u2588'; // Clear with space or draw with block
 	for (int y = 0; y < 4; y++) {
 		for (int x = 0; x < 4; x++) {
-			if (currentTetromino->GetTetrominoType(currentTetrominoType, currentRotation, x, y) == 1) {
+			if (currentTetromino->GetTetrominoType(currentTetrominoType, currentRotation, y, x) == 1) {
 				COORD pos = { (short)(currentPosX + x), (short)(currentPosY + y) };
 				SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
 				std::cout << block;
