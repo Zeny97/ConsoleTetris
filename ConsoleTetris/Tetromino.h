@@ -7,7 +7,7 @@ public:
 };
 
 enum class ETetrominoType : unsigned char{
-	TT_O = 0,
+	TT_O = 1,
 	TT_I,
 	TT_J,
 	TT_L,

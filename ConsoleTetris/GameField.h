@@ -11,10 +11,13 @@
 class GameField
 {
 public:
-	unsigned char gamefield[FIELD_HEIGHT][FIELD_WIDTH];
+	uint8_t gamefield[FIELD_HEIGHT][FIELD_WIDTH];
 	GameField();
 	void InitializeGamefield();
 	void DrawGamefield();
 	void CheckAndClearLines();
+	unsigned char GetCellValue(int coordX, int coorY);
+	void SetCellValueToBlock(int coordX, int coorY);
+	
 };
 #endif

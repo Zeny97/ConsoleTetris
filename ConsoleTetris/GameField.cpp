@@ -2,14 +2,13 @@
 #include "Macros.h"
 
 GameField::GameField(){
-	// No need to allocate memory, arrays are automatically allocated on stack
 }
 
 void GameField::InitializeGamefield()
 {
 	for (int y = 0; y < FIELD_HEIGHT; y++){
 		for (int x = 0; x < FIELD_WIDTH; x++){
-			gamefield[y][x] = ' ';
+			gamefield[y][x] = 0;
 		}
 	}
 }
@@ -24,7 +23,17 @@ void GameField::DrawGamefield(){
 }
 
 void GameField::CheckAndClearLines(){
-	// TODO: Überprüfe das Spielfeld und lösche volle Reihen
+	
+}
+
+unsigned char GameField::GetCellValue(int coordX, int coordY)
+{
+	return gamefield[coordX][coordY];
+}
+
+void GameField::SetCellValueToBlock(int coordX,int coordY)
+{
+	gamefield[coordX][coordY] = ;
 }
 
 //void GameField::PrintTetrisGamePlayfield()

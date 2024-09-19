@@ -8,22 +8,26 @@
 
 class TetrisGame 
 {
-public:
+private:
+	bool leftKeyPressed, rightKeyPressed, downKeyPressed, xKeyPressed, yKeyPressed;
 	GameField* gameField;
 	Tetromino* currentTetromino;
 
-	int currentTetrominoType;
-	int currentRotation;
-	int currentPosX;
-	int currentPosY;
+	int currentTetrominoType = 0;
+	int currentRotation = 0;
+	int currentPosX = 0;
+	int currentPosY = 0;
 
+public:
 	TetrisGame();
 	void Init();
 	void Run();
+	void EndGame();
 	void SpawnNewTetromino();
 	void HandleInput();
 	void UpdateTetrominoPosition();
-	void EndGame();
+	bool CheckCollision(int offsetX, int offsetY);
 	void DrawCurrentTetromino(bool clear = false);
+	void LockTetrominoInPlace();
 };
 #endif

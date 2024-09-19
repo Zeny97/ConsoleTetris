@@ -20,6 +20,10 @@ int main(){
 void SetConsoleScreenFont(int width, int height, const wchar_t* fontName)
 {
 	HANDLE consoleHandle = GetStdHandle(STD_OUTPUT_HANDLE);  // Get console handle
+	CONSOLE_CURSOR_INFO cursorInfo;
+	GetConsoleCursorInfo(consoleHandle, &cursorInfo);
+	cursorInfo.bVisible = false;
+	SetConsoleCursorInfo(consoleHandle, &cursorInfo);
 	if (consoleHandle == INVALID_HANDLE_VALUE) {
 		std::cerr << "Error getting console handle!" << std::endl;
 		return;
