@@ -4,20 +4,10 @@
 #include <ctime>
 #include <chrono>
 
-TetrisGame::TetrisGame() : leftKeyPressed(false), rightKeyPressed(false), downKeyPressed(false),
-xKeyPressed(false), yKeyPressed(false) {
+TetrisGame::TetrisGame() : leftKeyPressed(false), rightKeyPressed(false), downKeyPressed(false), upKeyPressed(false), xKeyPressed(false), yKeyPressed(false) {
 	gameField = nullptr;
 	currentTetromino = nullptr;
 	std::srand(std::time(nullptr));
-}
-
-void TetrisGame::SpawnNewTetromino() {
-	currentTetrominoType = std::rand() % ((int)ETetrominoType::TT_T - (int)ETetrominoType::TT_O);
-	currentRotation = 0;
-	currentPosX = FIELD_WIDTH / 2 - 2;
-	currentPosY = 0;
-	currentTetromino = new Tetromino();
-	SetTetrominoColor(currentTetrominoType);
 }
 
 void TetrisGame::Init() {
@@ -53,10 +43,11 @@ void TetrisGame::Run() {
 			}
 			else {
 				LockTetrominoInPlace();
+				DELETE_POINTER(currentTetromino);
 				SpawnNewTetromino();
-				//if (CheckCollision(0, 0)) {  // Check if the new piece can spawn
-				//	isRunning = false;       // If not, end the game
-				//}
+				if (CheckCollision(0, 0)) {  // Check if the new piece can spawn
+					isRunning = false;       // If not, end the game
+				}
 			}
 			lastFallTime = currentTime; // Reset the timer
 		}
@@ -64,7 +55,51 @@ void TetrisGame::Run() {
 	EndGame();
 }
 
-// Function to check if moving the tetromino would result in a collision
+void TetrisGame::EndGame() {
+	DELETE_POINTER(gameField);
+	DELETE_POINTER(currentTetromino);
+	CHANGE_CONSOLE_COLOR(255, 255, 255);
+	std::cout << "Game Over!" << std::endl;
+}
+
+void TetrisGame::SpawnNewTetromino() {
+	currentTetrominoType = std::rand() % ((int)ETetrominoType::ENUM_MAX - (int)ETetrominoType::TT_O) ;
+	SetTetrominoColor(currentTetrominoType);
+	currentRotation = 0;
+	currentPosX = FIELD_WIDTH / 2 - 2;
+	currentPosY = 0;
+	currentTetromino = new Tetromino();
+}
+
+void TetrisGame::DrawCurrentTetromino(bool clear) {
+	const char* block = clear ? " " : u8"\u2588"; // Clear or draw with block
+	for (int y = 0; y < 4; y++) {
+		for (int x = 0; x < 4; x++) {
+			if (currentTetromino->GetTetrominoType(currentTetrominoType, currentRotation, y, x) != 0) {
+				COORD pos = { (short)(currentPosX + x), (short)(currentPosY + y) };
+				SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+				std::cout << block;
+			}
+		}
+	}
+}
+
+void TetrisGame::UpdateTetrominoPosition() {
+	// Move tetromino down by default
+	DrawCurrentTetromino(true); // Clear previous position
+	currentPosY++;
+}
+
+void TetrisGame::LockTetrominoInPlace() {
+	for (int y = 0; y < 4; y++) {
+		for (int x = 0; x < 4; x++) {
+			if (currentTetromino->GetTetrominoType(currentTetrominoType, currentRotation, y, x) != 0) {
+				gameField->SetCellValueToBlock(currentPosX + x, currentPosY + y); // Lock block in place
+			}
+		}
+	}
+}
+
 bool TetrisGame::CheckCollision(int offsetX, int offsetY) {
 	for (int y = 0; y < 4; y++) {
 		for (int x = 0; x < 4; x++) {
@@ -78,7 +113,7 @@ bool TetrisGame::CheckCollision(int offsetX, int offsetY) {
 				}
 
 				// Check if there's already a piece in the new position
-				if (gameField->GetCellValue(newX, newY) != 0) {
+				if (gameField->GetCellValue(newX, newY) == 1) {
 					return true; // Collision detected
 				}
 			}
@@ -87,24 +122,17 @@ bool TetrisGame::CheckCollision(int offsetX, int offsetY) {
 	return false; // No collision
 }
 
-// Function to lock the tetromino in place
-void TetrisGame::LockTetrominoInPlace() {
-	for (int y = 0; y < 4; y++) {
-		for (int x = 0; x < 4; x++) {
-			if (currentTetromino->GetTetrominoType(currentTetrominoType, currentRotation, y, x) != 0) {
-				gameField->SetCellValueToBlock(currentPosX + x, currentPosY + y); // Lock block in place
-			}
-		}
-	}
-}
-
 void TetrisGame::HandleInput() {
 
 	// Check for LEFT key press
 	if (GetAsyncKeyState(VK_LEFT)) {
+		if (CheckCollision(-1, 0)) {
+			return;
+		}
+
 		if (!leftKeyPressed) { 
 			DrawCurrentTetromino(true); // Clear previous position
-			currentPosX = max(0, currentPosX - 1);
+			currentPosX--;
 			leftKeyPressed = true;
 		}
 	}
@@ -113,9 +141,13 @@ void TetrisGame::HandleInput() {
 	}
 
 	if (GetAsyncKeyState(VK_RIGHT)) {
+		if (CheckCollision(1, 0)) {
+			return;
+		}
+		
 		if (!rightKeyPressed) {
 			DrawCurrentTetromino(true); // Clear previous position
-			currentPosX = min(FIELD_WIDTH - 4, currentPosX + 1);
+			currentPosX++;
 			rightKeyPressed = true;
 		}
 		// Move right
@@ -125,10 +157,13 @@ void TetrisGame::HandleInput() {
 	}
 
 	if (GetAsyncKeyState(VK_DOWN)) {
+		if (CheckCollision(0, 1)) {
+			return;
+		}
 		if (!downKeyPressed) {
 			// Drop faster
 			DrawCurrentTetromino(true); // Clear previous position
-			currentPosY = min(FIELD_HEIGHT - 4, currentPosY + 1);
+			currentPosY++;
 			downKeyPressed = true;
 		}
 	}
@@ -137,10 +172,16 @@ void TetrisGame::HandleInput() {
 	}
 
 	if (GetAsyncKeyState(VK_UP)) {
-		// Hard drop
-		DrawCurrentTetromino(true); // Clear previous position
-		while (currentPosY < FIELD_HEIGHT - 4)
-			currentPosY++;
+		if (!upKeyPressed) {
+			// Hard drop
+			upKeyPressed = true;
+			DrawCurrentTetromino(true); // Clear previous position
+			while (!CheckCollision(0, 1))
+				currentPosY++;
+		}
+	}
+	else {
+		upKeyPressed = false;
 	}
 
 	if (GetAsyncKeyState(0x58)) { // X Key - Rotate clockwise
@@ -166,34 +207,6 @@ void TetrisGame::HandleInput() {
 	}
 }
 
-void TetrisGame::UpdateTetrominoPosition() {
-	// Move tetromino down by default
-	DrawCurrentTetromino(true); // Clear previous position
-	currentPosY = min(FIELD_HEIGHT - 4, currentPosY + 1);
-}
-
-void TetrisGame::DrawCurrentTetromino(bool clear) {
-	const char* block = clear ? " " : u8"\u2588"; // Clear with space or draw with block
-	for (int y = 0; y < 4; y++) {
-		for (int x = 0; x < 4; x++) {
-			if (currentTetromino->GetTetrominoType(currentTetrominoType, currentRotation, y, x) != 0) {
-				COORD pos = { (short)(currentPosX + x), (short)(currentPosY + y) };
-				SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
-				std::cout << block;
-			}
-		}
-	}
-
-
-}
-
-void TetrisGame::EndGame() {
-	DELETE_POINTER(gameField);
-	DELETE_POINTER(currentTetromino);
-	std::cout << "Game Over!" << std::endl;
-}
-
-// Funktion zum Setzen der Textfarbe in der Konsole
 void TetrisGame::SetTetrominoColor(int tetrominoType) {
 	// Je nach Tetromino-Nummer eine andere Farbe setzen
 	switch (tetrominoType) {

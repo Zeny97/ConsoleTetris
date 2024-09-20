@@ -16,5 +16,6 @@ enum class ETetrominoType : unsigned char{
 	TT_S = 6, // Green
 	TT_Z = 7, // Red
 	TT_T = 8, // Purple
+	ENUM_MAX
 };
 #endif

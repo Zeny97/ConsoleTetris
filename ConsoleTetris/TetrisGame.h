@@ -9,7 +9,7 @@
 class TetrisGame 
 {
 private:
-	bool leftKeyPressed, rightKeyPressed, downKeyPressed, xKeyPressed, yKeyPressed;
+	bool leftKeyPressed, rightKeyPressed, downKeyPressed, upKeyPressed, xKeyPressed, yKeyPressed;
 	GameField* gameField;
 	Tetromino* currentTetromino;
 
@@ -24,11 +24,11 @@ public:
 	void Run();
 	void EndGame();
 	void SpawnNewTetromino();
-	void HandleInput();
-	void UpdateTetrominoPosition();
-	bool CheckCollision(int offsetX, int offsetY);
 	void DrawCurrentTetromino(bool clear = false);
+	void UpdateTetrominoPosition();
 	void LockTetrominoInPlace();
+	bool CheckCollision(int offsetX, int offsetY);
+	void HandleInput();
 	void SetTetrominoColor(int tetrominoType);
 };
 #endif

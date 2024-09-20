@@ -28,12 +28,12 @@ void GameField::CheckAndClearLines(){
 
 unsigned char GameField::GetCellValue(int coordX, int coordY)
 {
-	return gamefield[coordX][coordY];
+	return gamefield[coordY][coordX];
 }
 
 void GameField::SetCellValueToBlock(int coordX,int coordY)
 {
-	//gamefield[coordX][coordY] = 1;
+	gamefield[coordY][coordX] = 1;
 }
 
 //void GameField::PrintTetrisGamePlayfield()
@@ -64,27 +64,27 @@ void GameField::SetCellValueToBlock(int coordX,int coordY)
 //
 //void GameField::PrintTetrisGameInfo()
 //{
-//	std::cout << "██████████████████████";
-//	std::cout << "█                    █";
-//	std::cout << "█  Justins Tetris    █";
-//	std::cout << "█                    █";
-//	std::cout << "█  Controls :        █";
-//	std::cout << "█                    █";
-//	std::cout << "█  Move : ← →        █";
-//	std::cout << "█  Rotate : y, x     █";
-//	std::cout << "█  Drop : ↓          █";
-//	std::cout << "█  Hard Drop : ↑     █";
-//	std::cout << "█                    █";
-//	std::cout << "█  Next Piece :      █";
-//	std::cout << "█                    █";
-//	std::cout << "█                    █";
-//	std::cout << "█                    █";
-//	std::cout << "█  Score :           █";
-//	std::cout << "█                    █";
-//	std::cout << "█  Lvl : [01]        █";
-//	std::cout << "█  Lines : [00 / 00] █";
-//	std::cout << "█  Time : [00:00]    █";
-//	std::cout << "█                    █";
-//	std::cout << "██████████████████████";
+//	std::cout << "██████████████████████\n";
+//	std::cout << "█                    █\n";
+//	std::cout << "█  Justins Tetris    █\n";
+//	std::cout << "█                    █\n";
+//	std::cout << "█  Controls :        █\n";
+//	std::cout << "█                    █\n";
+//	std::cout << "█  Move : ← →        █\n";
+//	std::cout << "█  Rotate : y, x     █\n";
+//	std::cout << "█  Drop : ↓          █\n";
+//	std::cout << "█  Hard Drop : ↑     █\n";
+//	std::cout << "█                    █\n";
+//	std::cout << "█  Next Piece :      █\n";
+//	std::cout << "█                    █\n";
+//	std::cout << "█                    █\n";
+//	std::cout << "█                    █\n";
+//	std::cout << "█  Score :           █\n";
+//	std::cout << "█                    █\n";
+//	std::cout << "█  Lvl : [01]        █\n";
+//	std::cout << "█  Lines : [00 / 00] █\n";
+//	std::cout << "█  Time : [00:00]    █\n";
+//	std::cout << "█                    █\n";
+//	std::cout << "██████████████████████\n";
 //}
 
