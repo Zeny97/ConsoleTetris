@@ -12,11 +12,12 @@ xKeyPressed(false), yKeyPressed(false) {
 }
 
 void TetrisGame::SpawnNewTetromino() {
-	currentTetrominoType = std::rand() % (int)ETetrominoType::ENUM_MAX - 1;
+	currentTetrominoType = std::rand() % ((int)ETetrominoType::TT_T - (int)ETetrominoType::TT_O);
 	currentRotation = 0;
 	currentPosX = FIELD_WIDTH / 2 - 2;
 	currentPosY = 0;
 	currentTetromino = new Tetromino();
+	SetTetrominoColor(currentTetrominoType);
 }
 
 void TetrisGame::Init() {
@@ -182,10 +183,40 @@ void TetrisGame::DrawCurrentTetromino(bool clear) {
 			}
 		}
 	}
+
+
 }
 
 void TetrisGame::EndGame() {
 	DELETE_POINTER(gameField);
 	DELETE_POINTER(currentTetromino);
 	std::cout << "Game Over!" << std::endl;
+}
+
+// Funktion zum Setzen der Textfarbe in der Konsole
+void TetrisGame::SetTetrominoColor(int tetrominoType) {
+	// Je nach Tetromino-Nummer eine andere Farbe setzen
+	switch (tetrominoType) {
+	case 0: // Tetromino 0 (Beispiel: Gelb)
+		CHANGE_CONSOLE_COLOR(254, 251, 52);
+		break;
+	case 1: // Tetromino I (Beispiel: Cyan)
+		CHANGE_CONSOLE_COLOR(1, 237, 250);
+		break;
+	case 2: // Tetromino L (Beispiel: Orange)
+		CHANGE_CONSOLE_COLOR(254, 72, 25);
+		break;
+	case 3: // Tetromino J (Beispiel: Blau)
+		CHANGE_CONSOLE_COLOR(0, 119, 211);
+		break;
+	case 4: // Tetromino S (Beispiel: Grün)
+		CHANGE_CONSOLE_COLOR(83, 218, 63);
+		break;
+	case 5: // Tetromino Z (Beispiel: Rot)
+		CHANGE_CONSOLE_COLOR(234, 20, 28);
+		break;
+	case 6: // Tetromino T (Beispiel: Magenta)
+		CHANGE_CONSOLE_COLOR(221, 10, 178);
+		break;
+	}
 }

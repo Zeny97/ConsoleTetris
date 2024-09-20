@@ -33,7 +33,7 @@ unsigned char GameField::GetCellValue(int coordX, int coordY)
 
 void GameField::SetCellValueToBlock(int coordX,int coordY)
 {
-	gamefield[coordX][coordY] = ;
+	//gamefield[coordX][coordY] = 1;
 }
 
 //void GameField::PrintTetrisGamePlayfield()

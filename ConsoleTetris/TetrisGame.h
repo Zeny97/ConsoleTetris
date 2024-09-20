@@ -29,5 +29,6 @@ public:
 	bool CheckCollision(int offsetX, int offsetY);
 	void DrawCurrentTetromino(bool clear = false);
 	void LockTetrominoInPlace();
+	void SetTetrominoColor(int tetrominoType);
 };
 #endif

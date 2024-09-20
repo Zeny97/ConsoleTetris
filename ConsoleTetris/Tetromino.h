@@ -7,13 +7,14 @@ public:
 };
 
 enum class ETetrominoType : unsigned char{
-	TT_O = 1,
-	TT_I,
-	TT_J,
-	TT_L,
-	TT_S,
-	TT_Z,
-	TT_T,
-	ENUM_MAX
+	NONE = 0,
+	LOCKED = 1,
+	TT_O = 2, // Yellow
+	TT_I = 3, // Cyan
+	TT_J = 4, // Blue
+	TT_L = 5, // Orange
+	TT_S = 6, // Green
+	TT_Z = 7, // Red
+	TT_T = 8, // Purple
 };
 #endif
