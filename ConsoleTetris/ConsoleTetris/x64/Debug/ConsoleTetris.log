@@ -1,12 +1,11 @@
-﻿  GameField.cpp
+﻿  main.cpp
+  GameField.cpp
   TetrisGame.cpp
 C:\Users\jsontopski\Documents\Games Programming\C++\ConsoleTetris\ConsoleTetris\TetrisGame.cpp(10,22): warning C4244: "Argument": Konvertierung von "time_t" in "unsigned int", möglicher Datenverlust
-C:\Users\jsontopski\Documents\Games Programming\C++\ConsoleTetris\ConsoleTetris\TetrisGame.cpp(37,17): warning C4244: "Initialisierung": Konvertierung von "_Rep" in "int", möglicher Datenverlust
-C:\Users\jsontopski\Documents\Games Programming\C++\ConsoleTetris\ConsoleTetris\TetrisGame.cpp(37,17): warning C4244:         with
-C:\Users\jsontopski\Documents\Games Programming\C++\ConsoleTetris\ConsoleTetris\TetrisGame.cpp(37,17): warning C4244:         [
-C:\Users\jsontopski\Documents\Games Programming\C++\ConsoleTetris\ConsoleTetris\TetrisGame.cpp(37,17): warning C4244:             _Rep=__int64
-C:\Users\jsontopski\Documents\Games Programming\C++\ConsoleTetris\ConsoleTetris\TetrisGame.cpp(37,17): warning C4244:         ]
-  Tetromino.cpp
-  main.cpp
+C:\Users\jsontopski\Documents\Games Programming\C++\ConsoleTetris\ConsoleTetris\TetrisGame.cpp(39,17): warning C4244: "Initialisierung": Konvertierung von "_Rep" in "int", möglicher Datenverlust
+C:\Users\jsontopski\Documents\Games Programming\C++\ConsoleTetris\ConsoleTetris\TetrisGame.cpp(39,17): warning C4244:         with
+C:\Users\jsontopski\Documents\Games Programming\C++\ConsoleTetris\ConsoleTetris\TetrisGame.cpp(39,17): warning C4244:         [
+C:\Users\jsontopski\Documents\Games Programming\C++\ConsoleTetris\ConsoleTetris\TetrisGame.cpp(39,17): warning C4244:             _Rep=__int64
+C:\Users\jsontopski\Documents\Games Programming\C++\ConsoleTetris\ConsoleTetris\TetrisGame.cpp(39,17): warning C4244:         ]
   Code wird generiert...
   ConsoleTetris.vcxproj -> C:\Users\jsontopski\Documents\Games Programming\C++\ConsoleTetris\ConsoleTetris\x64\Debug\ConsoleTetris.exe

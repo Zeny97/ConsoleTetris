@@ -24,7 +24,9 @@ void TetrisGame::Run() {
 
 	// Timer setup using chrono
 	auto lastFallTime = std::chrono::steady_clock::now();
-	const int fallIntervalMs = 600;
+	const int baseFallIntervalMs = 600;
+	const int fallIncreasePerLvlMs = 30;
+	int fallIntervalMs = baseFallIntervalMs - fallIncreasePerLvlMs;
 
 	while (isRunning)
 	{
@@ -38,14 +40,14 @@ void TetrisGame::Run() {
 
 		// If enough time has passed, update tetromino position
 		if (elapsedMs >= fallIntervalMs) {
-			if (!CheckCollision(0, 1)) {  // Move tetromino down if no collision
+			if (!CheckCollision(0, 1, currentRotation)) {  // Move tetromino down if no collision
 				UpdateTetrominoPosition();
 			}
 			else {
 				LockTetrominoInPlace();
 				DELETE_POINTER(currentTetromino);
 				SpawnNewTetromino();
-				if (CheckCollision(0, 0)) {  // Check if the new piece can spawn
+				if (CheckCollision(0, 0, currentRotation)) {  // Check if the new piece can spawn
 					isRunning = false;       // If not, end the game
 				}
 			}
@@ -63,7 +65,7 @@ void TetrisGame::EndGame() {
 }
 
 void TetrisGame::SpawnNewTetromino() {
-	currentTetrominoType = std::rand() % ((int)ETetrominoType::ENUM_MAX - (int)ETetrominoType::TT_O) ;
+	currentTetrominoType = std::rand() % ((int)ETetrominoType::ENUM_MAX - (int)ETetrominoType::TT_O);
 	SetTetrominoColor(currentTetrominoType);
 	currentRotation = 0;
 	currentPosX = FIELD_WIDTH / 2 - 2;
@@ -95,15 +97,16 @@ void TetrisGame::LockTetrominoInPlace() {
 		for (int x = 0; x < 4; x++) {
 			if (currentTetromino->GetTetrominoType(currentTetrominoType, currentRotation, y, x) != 0) {
 				gameField->SetCellValueToBlock(currentPosX + x, currentPosY + y); // Lock block in place
+				gameField->CheckAndClearLines();
 			}
 		}
 	}
 }
 
-bool TetrisGame::CheckCollision(int offsetX, int offsetY) {
+bool TetrisGame::CheckCollision(int offsetX, int offsetY, int rotation) {
 	for (int y = 0; y < 4; y++) {
 		for (int x = 0; x < 4; x++) {
-			if (currentTetromino->GetTetrominoType(currentTetrominoType, currentRotation, y, x) != 0) {
+			if (currentTetromino->GetTetrominoType(currentTetrominoType, rotation, y, x) != 0) {
 				int newX = currentPosX + x + offsetX;
 				int newY = currentPosY + y + offsetY;
 
@@ -126,11 +129,11 @@ void TetrisGame::HandleInput() {
 
 	// Check for LEFT key press
 	if (GetAsyncKeyState(VK_LEFT)) {
-		if (CheckCollision(-1, 0)) {
+		if (CheckCollision(-1, 0, currentRotation)) {
 			return;
 		}
 
-		if (!leftKeyPressed) { 
+		if (!leftKeyPressed) {
 			DrawCurrentTetromino(true); // Clear previous position
 			currentPosX--;
 			leftKeyPressed = true;
@@ -141,10 +144,10 @@ void TetrisGame::HandleInput() {
 	}
 
 	if (GetAsyncKeyState(VK_RIGHT)) {
-		if (CheckCollision(1, 0)) {
+		if (CheckCollision(1, 0, currentRotation)) {
 			return;
 		}
-		
+
 		if (!rightKeyPressed) {
 			DrawCurrentTetromino(true); // Clear previous position
 			currentPosX++;
@@ -157,7 +160,7 @@ void TetrisGame::HandleInput() {
 	}
 
 	if (GetAsyncKeyState(VK_DOWN)) {
-		if (CheckCollision(0, 1)) {
+		if (CheckCollision(0, 1, currentRotation)) {
 			return;
 		}
 		if (!downKeyPressed) {
@@ -176,7 +179,7 @@ void TetrisGame::HandleInput() {
 			// Hard drop
 			upKeyPressed = true;
 			DrawCurrentTetromino(true); // Clear previous position
-			while (!CheckCollision(0, 1))
+			while (!CheckCollision(0, 1, currentRotation))
 				currentPosY++;
 		}
 	}
@@ -186,9 +189,11 @@ void TetrisGame::HandleInput() {
 
 	if (GetAsyncKeyState(0x58)) { // X Key - Rotate clockwise
 		if (!xKeyPressed) {
-			DrawCurrentTetromino(true); // Clear previous position before rotating
-			currentRotation = (currentRotation + 1) % 4;
-			xKeyPressed = true;
+			if (!CheckCollision(0, 0, currentRotation + 1)) {
+				DrawCurrentTetromino(true); // Clear previous position before rotating
+				currentRotation = (currentRotation + 1) % 4;
+				xKeyPressed = true;
+			}
 		}
 	}
 	else {
@@ -197,9 +202,11 @@ void TetrisGame::HandleInput() {
 
 	if (GetAsyncKeyState(0x59)) { // Y Key - Rotate counter-clockwise
 		if (!yKeyPressed) {
-			DrawCurrentTetromino(true); // Clear previous position before rotating
-			currentRotation = (currentRotation == 0) ? 3 : currentRotation - 1;
-			yKeyPressed = true;
+			if (!CheckCollision(0, 0, currentRotation - 1)) {
+				DrawCurrentTetromino(true); // Clear previous position before rotating
+				currentRotation = (currentRotation == 0) ? 3 : currentRotation - 1;
+				yKeyPressed = true;
+			}
 		}
 	}
 	else {
@@ -211,25 +218,25 @@ void TetrisGame::SetTetrominoColor(int tetrominoType) {
 	// Je nach Tetromino-Nummer eine andere Farbe setzen
 	switch (tetrominoType) {
 	case 0: // Tetromino 0 (Beispiel: Gelb)
-		CHANGE_CONSOLE_COLOR(254, 251, 52);
+		CHANGE_CONSOLE_COLOR(255, 250, 50);
 		break;
 	case 1: // Tetromino I (Beispiel: Cyan)
-		CHANGE_CONSOLE_COLOR(1, 237, 250);
+		CHANGE_CONSOLE_COLOR(0, 235, 250);
 		break;
 	case 2: // Tetromino L (Beispiel: Orange)
-		CHANGE_CONSOLE_COLOR(254, 72, 25);
+		CHANGE_CONSOLE_COLOR(250, 70, 25);
 		break;
 	case 3: // Tetromino J (Beispiel: Blau)
-		CHANGE_CONSOLE_COLOR(0, 119, 211);
+		CHANGE_CONSOLE_COLOR(0, 120, 210);
 		break;
 	case 4: // Tetromino S (Beispiel: Grün)
-		CHANGE_CONSOLE_COLOR(83, 218, 63);
+		CHANGE_CONSOLE_COLOR(80, 220, 60);
 		break;
 	case 5: // Tetromino Z (Beispiel: Rot)
-		CHANGE_CONSOLE_COLOR(234, 20, 28);
+		CHANGE_CONSOLE_COLOR(235, 20, 30);
 		break;
 	case 6: // Tetromino T (Beispiel: Magenta)
-		CHANGE_CONSOLE_COLOR(221, 10, 178);
+		CHANGE_CONSOLE_COLOR(225, 10, 180);
 		break;
 	}
 }

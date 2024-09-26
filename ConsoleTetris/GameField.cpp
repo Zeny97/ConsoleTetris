@@ -23,7 +23,10 @@ void GameField::DrawGamefield(){
 }
 
 void GameField::CheckAndClearLines(){
-	
+	for (int y = FIELD_HEIGHT - 1; y > 0; y--){
+		for (int x = 0; x < FIELD_WIDTH; x++){
+		}
+	}
 }
 
 unsigned char GameField::GetCellValue(int coordX, int coordY)
@@ -72,7 +75,7 @@ void GameField::SetCellValueToBlock(int coordX,int coordY)
 //	std::cout << "█                    █\n";
 //	std::cout << "█  Move : ← →        █\n";
 //	std::cout << "█  Rotate : y, x     █\n";
-//	std::cout << "█  Drop : ↓          █\n";
+//	std::cout << "█  Soft Drop : ↓     █\n";
 //	std::cout << "█  Hard Drop : ↑     █\n";
 //	std::cout << "█                    █\n";
 //	std::cout << "█  Next Piece :      █\n";
