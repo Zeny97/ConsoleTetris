@@ -32,7 +32,6 @@ void TetrisGame::Run() {
 	{
 		DrawCurrentTetromino();
 		HandleInput();
-		gameField->CheckAndClearLines();
 
 		// Get the current time
 		auto currentTime = std::chrono::steady_clock::now();
@@ -97,7 +96,7 @@ void TetrisGame::LockTetrominoInPlace() {
 		for (int x = 0; x < 4; x++) {
 			if (currentTetromino->GetTetrominoType(currentTetrominoType, currentRotation, y, x) != 0) {
 				gameField->SetCellValueToBlock(currentPosX + x, currentPosY + y); // Lock block in place
-				gameField->CheckAndClearLines();
+				gameField->LineClear();
 			}
 		}
 	}

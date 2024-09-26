@@ -22,12 +22,40 @@ void GameField::DrawGamefield(){
 	}
 }
 
-void GameField::CheckAndClearLines(){
-	for (int y = FIELD_HEIGHT - 1; y > 0; y--){
-		for (int x = 0; x < FIELD_WIDTH; x++){
-		}
-	}
+// Überprüft, ob eine Linie voll ist
+bool GameField::CheckLine(int y) {
+    for (int x = 0; x < FIELD_WIDTH; x++) {
+        if (gamefield[y][x] == 0) {
+            return false; // Wenn ein Feld leer ist, ist die Linie nicht voll
+        }
+    }
+    return true; // Alle Felder in der Linie sind gefüllt
 }
+
+// Löscht eine volle Linie und verschiebt die darüber liegenden Linien nach unten
+void GameField::ClearLine(int y) {
+    // Verschiebe alle darüber liegenden Linien eine Zeile nach unten
+    for (int line = y; line > 0; line--) {
+        for (int x = 0; x < FIELD_WIDTH; x++) {
+            gamefield[line][x] = gamefield[line - 1][x];
+        }
+    }
+    // Setze die oberste Linie auf leer
+    for (int x = 0; x < FIELD_WIDTH; x++) {
+        gamefield[0][x] = 0;
+    }
+}
+
+// Überprüft und löscht alle vollen Linien im Spielfeld
+void GameField::LineClear() {
+    for (int y = 0; y < FIELD_HEIGHT; y++) {
+        if (CheckLine(y)) {
+            ClearLine(y);
+            y--; // Nach dem Löschen eine Zeile zurückgehen, da die aktuelle Zeile nach unten geschoben wurde
+        }
+    }
+}
+
 
 unsigned char GameField::GetCellValue(int coordX, int coordY)
 {

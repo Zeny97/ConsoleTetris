@@ -15,7 +15,9 @@ public:
 	GameField();
 	void InitializeGamefield();
 	void DrawGamefield();
-	void CheckAndClearLines();
+	bool CheckLine(int y);
+	void ClearLine(int y);
+	void LineClear();
 	unsigned char GetCellValue(int coordX, int coorY);
 	void SetCellValueToBlock(int coordX, int coorY);
 	
