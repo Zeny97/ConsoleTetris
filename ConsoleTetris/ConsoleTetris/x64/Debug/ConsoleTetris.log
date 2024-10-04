@@ -1,14 +1,12 @@
 ﻿  main.cpp
   GameField.cpp
   TetrisGame.cpp
-D:\Games  Programming\C++\ConsoleTetris\ConsoleTetris\TetrisGame.cpp(10,22): warning C4244: "Argument": Konvertierung von "time_t" in "unsigned int", möglicher Datenverlust
-D:\Games  Programming\C++\ConsoleTetris\ConsoleTetris\TetrisGame.cpp(38,17): warning C4244: "Initialisierung": Konvertierung von "_Rep" in "int", möglicher Datenverlust
-D:\Games  Programming\C++\ConsoleTetris\ConsoleTetris\TetrisGame.cpp(38,17): warning C4244:         with
-D:\Games  Programming\C++\ConsoleTetris\ConsoleTetris\TetrisGame.cpp(38,17): warning C4244:         [
-D:\Games  Programming\C++\ConsoleTetris\ConsoleTetris\TetrisGame.cpp(38,17): warning C4244:             _Rep=__int64
-D:\Games  Programming\C++\ConsoleTetris\ConsoleTetris\TetrisGame.cpp(38,17): warning C4244:         ]
+C:\Users\jsontopski\Documents\Games Programming\C++\ConsoleTetris\ConsoleTetris\TetrisGame.cpp(10,22): warning C4244: "Argument": Konvertierung von "time_t" in "unsigned int", möglicher Datenverlust
+C:\Users\jsontopski\Documents\Games Programming\C++\ConsoleTetris\ConsoleTetris\TetrisGame.cpp(38,17): warning C4244: "Initialisierung": Konvertierung von "_Rep" in "int", möglicher Datenverlust
+C:\Users\jsontopski\Documents\Games Programming\C++\ConsoleTetris\ConsoleTetris\TetrisGame.cpp(38,17): warning C4244:         with
+C:\Users\jsontopski\Documents\Games Programming\C++\ConsoleTetris\ConsoleTetris\TetrisGame.cpp(38,17): warning C4244:         [
+C:\Users\jsontopski\Documents\Games Programming\C++\ConsoleTetris\ConsoleTetris\TetrisGame.cpp(38,17): warning C4244:             _Rep=__int64
+C:\Users\jsontopski\Documents\Games Programming\C++\ConsoleTetris\ConsoleTetris\TetrisGame.cpp(38,17): warning C4244:         ]
   Tetromino.cpp
   Code wird generiert...
-  ConsoleTetris.vcxproj -> D:\Games  Programming\C++\ConsoleTetris\ConsoleTetris\x64\Debug\ConsoleTetris.exe
-  Der Befehl "pwsh.exe" ist entweder falsch geschrieben oder
-  konnte nicht gefunden werden.
+  ConsoleTetris.vcxproj -> C:\Users\jsontopski\Documents\Games Programming\C++\ConsoleTetris\ConsoleTetris\x64\Debug\ConsoleTetris.exe

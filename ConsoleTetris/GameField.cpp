@@ -22,7 +22,6 @@ void GameField::DrawGamefield(){
 	}
 }
 
-// Überprüft, ob eine Linie voll ist
 bool GameField::CheckLine(int y) {
     for (int x = 0; x < FIELD_WIDTH; x++) {
         if (gamefield[y][x] == 0) {
@@ -32,7 +31,6 @@ bool GameField::CheckLine(int y) {
     return true; // Alle Felder in der Linie sind gefüllt
 }
 
-// Löscht eine volle Linie und verschiebt die darüber liegenden Linien nach unten
 void GameField::ClearLine(int y) {
     // Verschiebe alle darüber liegenden Linien eine Zeile nach unten
     for (int line = y; line > 0; line--) {
@@ -46,7 +44,6 @@ void GameField::ClearLine(int y) {
     }
 }
 
-// Überprüft und löscht alle vollen Linien im Spielfeld
 void GameField::LineClear() {
     for (int y = 0; y < FIELD_HEIGHT; y++) {
         if (CheckLine(y)) {

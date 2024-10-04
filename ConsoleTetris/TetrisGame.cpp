@@ -96,7 +96,7 @@ void TetrisGame::LockTetrominoInPlace() {
 		for (int x = 0; x < 4; x++) {
 			if (currentTetromino->GetTetrominoType(currentTetrominoType, currentRotation, y, x) != 0) {
 				gameField->SetCellValueToBlock(currentPosX + x, currentPosY + y); // Lock block in place
-				gameField->LineClear();
+				//gameField->LineClear();
 			}
 		}
 	}
