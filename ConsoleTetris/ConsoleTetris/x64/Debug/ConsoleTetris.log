@@ -1,12 +1,30 @@
-﻿  main.cpp
-  GameField.cpp
-  TetrisGame.cpp
-C:\Users\jsontopski\Documents\Games Programming\C++\ConsoleTetris\ConsoleTetris\TetrisGame.cpp(10,22): warning C4244: "Argument": Konvertierung von "time_t" in "unsigned int", möglicher Datenverlust
-C:\Users\jsontopski\Documents\Games Programming\C++\ConsoleTetris\ConsoleTetris\TetrisGame.cpp(38,17): warning C4244: "Initialisierung": Konvertierung von "_Rep" in "int", möglicher Datenverlust
-C:\Users\jsontopski\Documents\Games Programming\C++\ConsoleTetris\ConsoleTetris\TetrisGame.cpp(38,17): warning C4244:         with
-C:\Users\jsontopski\Documents\Games Programming\C++\ConsoleTetris\ConsoleTetris\TetrisGame.cpp(38,17): warning C4244:         [
-C:\Users\jsontopski\Documents\Games Programming\C++\ConsoleTetris\ConsoleTetris\TetrisGame.cpp(38,17): warning C4244:             _Rep=__int64
-C:\Users\jsontopski\Documents\Games Programming\C++\ConsoleTetris\ConsoleTetris\TetrisGame.cpp(38,17): warning C4244:         ]
-  Tetromino.cpp
-  Code wird generiert...
-  ConsoleTetris.vcxproj -> C:\Users\jsontopski\Documents\Games Programming\C++\ConsoleTetris\ConsoleTetris\x64\Debug\ConsoleTetris.exe
+﻿  GameField.cpp
+D:\Games  Programming\C++\ConsoleTetris\ConsoleTetris\GameField.cpp(74,15): warning C4566: Das durch den universellen Zeichennamen "\u2588" dargestellte Zeichen kann in der aktuellen Codepage (1252) nicht dargestellt werden.
+D:\Games  Programming\C++\ConsoleTetris\ConsoleTetris\GameField.cpp(75,15): warning C4566: Das durch den universellen Zeichennamen "\u2588" dargestellte Zeichen kann in der aktuellen Codepage (1252) nicht dargestellt werden.
+D:\Games  Programming\C++\ConsoleTetris\ConsoleTetris\GameField.cpp(76,15): warning C4566: Das durch den universellen Zeichennamen "\u2588" dargestellte Zeichen kann in der aktuellen Codepage (1252) nicht dargestellt werden.
+D:\Games  Programming\C++\ConsoleTetris\ConsoleTetris\GameField.cpp(77,15): warning C4566: Das durch den universellen Zeichennamen "\u2588" dargestellte Zeichen kann in der aktuellen Codepage (1252) nicht dargestellt werden.
+D:\Games  Programming\C++\ConsoleTetris\ConsoleTetris\GameField.cpp(78,15): warning C4566: Das durch den universellen Zeichennamen "\u2588" dargestellte Zeichen kann in der aktuellen Codepage (1252) nicht dargestellt werden.
+D:\Games  Programming\C++\ConsoleTetris\ConsoleTetris\GameField.cpp(79,15): warning C4566: Das durch den universellen Zeichennamen "\u2588" dargestellte Zeichen kann in der aktuellen Codepage (1252) nicht dargestellt werden.
+D:\Games  Programming\C++\ConsoleTetris\ConsoleTetris\GameField.cpp(80,15): warning C4566: Das durch den universellen Zeichennamen "\u2588" dargestellte Zeichen kann in der aktuellen Codepage (1252) nicht dargestellt werden.
+D:\Games  Programming\C++\ConsoleTetris\ConsoleTetris\GameField.cpp(80,15): warning C4566: Das durch den universellen Zeichennamen "\u2190" dargestellte Zeichen kann in der aktuellen Codepage (1252) nicht dargestellt werden.
+D:\Games  Programming\C++\ConsoleTetris\ConsoleTetris\GameField.cpp(80,15): warning C4566: Das durch den universellen Zeichennamen "\u2192" dargestellte Zeichen kann in der aktuellen Codepage (1252) nicht dargestellt werden.
+D:\Games  Programming\C++\ConsoleTetris\ConsoleTetris\GameField.cpp(81,15): warning C4566: Das durch den universellen Zeichennamen "\u2588" dargestellte Zeichen kann in der aktuellen Codepage (1252) nicht dargestellt werden.
+D:\Games  Programming\C++\ConsoleTetris\ConsoleTetris\GameField.cpp(82,15): warning C4566: Das durch den universellen Zeichennamen "\u2588" dargestellte Zeichen kann in der aktuellen Codepage (1252) nicht dargestellt werden.
+D:\Games  Programming\C++\ConsoleTetris\ConsoleTetris\GameField.cpp(82,15): warning C4566: Das durch den universellen Zeichennamen "\u2193" dargestellte Zeichen kann in der aktuellen Codepage (1252) nicht dargestellt werden.
+D:\Games  Programming\C++\ConsoleTetris\ConsoleTetris\GameField.cpp(83,15): warning C4566: Das durch den universellen Zeichennamen "\u2588" dargestellte Zeichen kann in der aktuellen Codepage (1252) nicht dargestellt werden.
+D:\Games  Programming\C++\ConsoleTetris\ConsoleTetris\GameField.cpp(83,15): warning C4566: Das durch den universellen Zeichennamen "\u2191" dargestellte Zeichen kann in der aktuellen Codepage (1252) nicht dargestellt werden.
+D:\Games  Programming\C++\ConsoleTetris\ConsoleTetris\GameField.cpp(84,15): warning C4566: Das durch den universellen Zeichennamen "\u2588" dargestellte Zeichen kann in der aktuellen Codepage (1252) nicht dargestellt werden.
+D:\Games  Programming\C++\ConsoleTetris\ConsoleTetris\GameField.cpp(85,15): warning C4566: Das durch den universellen Zeichennamen "\u2588" dargestellte Zeichen kann in der aktuellen Codepage (1252) nicht dargestellt werden.
+D:\Games  Programming\C++\ConsoleTetris\ConsoleTetris\GameField.cpp(86,15): warning C4566: Das durch den universellen Zeichennamen "\u2588" dargestellte Zeichen kann in der aktuellen Codepage (1252) nicht dargestellt werden.
+D:\Games  Programming\C++\ConsoleTetris\ConsoleTetris\GameField.cpp(87,15): warning C4566: Das durch den universellen Zeichennamen "\u2588" dargestellte Zeichen kann in der aktuellen Codepage (1252) nicht dargestellt werden.
+D:\Games  Programming\C++\ConsoleTetris\ConsoleTetris\GameField.cpp(88,15): warning C4566: Das durch den universellen Zeichennamen "\u2588" dargestellte Zeichen kann in der aktuellen Codepage (1252) nicht dargestellt werden.
+D:\Games  Programming\C++\ConsoleTetris\ConsoleTetris\GameField.cpp(89,15): warning C4566: Das durch den universellen Zeichennamen "\u2588" dargestellte Zeichen kann in der aktuellen Codepage (1252) nicht dargestellt werden.
+D:\Games  Programming\C++\ConsoleTetris\ConsoleTetris\GameField.cpp(90,15): warning C4566: Das durch den universellen Zeichennamen "\u2588" dargestellte Zeichen kann in der aktuellen Codepage (1252) nicht dargestellt werden.
+D:\Games  Programming\C++\ConsoleTetris\ConsoleTetris\GameField.cpp(91,15): warning C4566: Das durch den universellen Zeichennamen "\u2588" dargestellte Zeichen kann in der aktuellen Codepage (1252) nicht dargestellt werden.
+D:\Games  Programming\C++\ConsoleTetris\ConsoleTetris\GameField.cpp(92,15): warning C4566: Das durch den universellen Zeichennamen "\u2588" dargestellte Zeichen kann in der aktuellen Codepage (1252) nicht dargestellt werden.
+D:\Games  Programming\C++\ConsoleTetris\ConsoleTetris\GameField.cpp(93,15): warning C4566: Das durch den universellen Zeichennamen "\u2588" dargestellte Zeichen kann in der aktuellen Codepage (1252) nicht dargestellt werden.
+D:\Games  Programming\C++\ConsoleTetris\ConsoleTetris\GameField.cpp(94,15): warning C4566: Das durch den universellen Zeichennamen "\u2588" dargestellte Zeichen kann in der aktuellen Codepage (1252) nicht dargestellt werden.
+D:\Games  Programming\C++\ConsoleTetris\ConsoleTetris\GameField.cpp(95,15): warning C4566: Das durch den universellen Zeichennamen "\u2588" dargestellte Zeichen kann in der aktuellen Codepage (1252) nicht dargestellt werden.
+  ConsoleTetris.vcxproj -> D:\Games  Programming\C++\ConsoleTetris\ConsoleTetris\x64\Debug\ConsoleTetris.exe
+  Der Befehl "pwsh.exe" ist entweder falsch geschrieben oder
+  konnte nicht gefunden werden.

@@ -13,6 +13,7 @@ TetrisGame::TetrisGame() : leftKeyPressed(false), rightKeyPressed(false), downKe
 void TetrisGame::Init() {
 	CLEAR_SCREEN;
 	gameField = new GameField();
+	gameField->PrintTetrisGameUI();
 	gameField->InitializeGamefield();
 	gameField->DrawGamefield();
 	SpawnNewTetromino();
@@ -114,7 +115,7 @@ bool TetrisGame::CheckCollision(int offsetX, int offsetY, int rotation) {
 					return true; // Collision detected
 				}
 
-				// Check if there's already a piece in the new position
+				// Check if there's already a block in the new position
 				if (gameField->GetCellValue(newX, newY) == 1) {
 					return true; // Collision detected
 				}
