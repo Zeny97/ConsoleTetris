@@ -21,7 +21,5 @@ public:
 	void LineClear();
 	unsigned char GetCellValue(int coordX, int coorY);
 	void SetCellValueToBlock(int coordX, int coorY);
-
-	
 };
 #endif

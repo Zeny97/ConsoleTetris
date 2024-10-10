@@ -8,7 +8,7 @@ void SetConsoleScreenFont(int,int,const wchar_t*);
 
 int main(){
 	SetConsoleOutputCP(CP_UTF8);
-	SetConsoleScreenFont(32, 32, L"Consolas");
+	SetConsoleScreenFont(32, 32, L"Terminal");
 	
 	TetrisGame* game = new TetrisGame();
 	game->Init();

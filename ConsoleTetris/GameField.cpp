@@ -6,11 +6,6 @@ GameField::GameField(){
 
 void GameField::InitializeGamefield()
 {
-	COORD coord;
-	coord.X = 2;
-	coord.Y = 1;
-	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
-
 	for (int y = 0; y < FIELD_HEIGHT; y++){
 		for (int x = 0; x < FIELD_WIDTH; x++){
 			gamefield[y][x] = 0;
@@ -58,7 +53,6 @@ void GameField::LineClear() {
     }
 }
 
-
 unsigned char GameField::GetCellValue(int coordX, int coordY)
 {
 	return gamefield[coordY][coordX];
@@ -71,53 +65,26 @@ void GameField::SetCellValueToBlock(int coordX,int coordY)
 
 void GameField::PrintTetrisGameUI()
 {
-	std::cout << "█          ██████████████████████\n"; 
-	std::cout << "█          █                    █\n";
-	std::cout << "█          █  Justins Tetris    █\n";
-	std::cout << "█          █                    █\n";
-	std::cout << "█          █  Controls :        █\n";
-	std::cout << "█          █                    █\n";
-	std::cout << "█          █  Move : ← →        █\n";
-	std::cout << "█          █  Rotate : y, x     █\n";
-	std::cout << "█          █  Soft Drop : ↓     █\n";
-	std::cout << "█          █  Hard Drop : ↑     █\n";
-	std::cout << "█          █                    █\n";
-	std::cout << "█          █  Next Piece :      █\n";
-	std::cout << "█          █                    █\n";
-	std::cout << "█          █                    █\n";
-	std::cout << "█          █                    █\n";
-	std::cout << "█          █  Score :           █\n";
-	std::cout << "█          █                    █\n";
-	std::cout << "█          █  Lvl : [01]        █\n";
-	std::cout << "█          █  Lines : [00 / 00] █\n";
-	std::cout << "█          █  Time : [00:00]    █\n";
-	std::cout << "████████████                    █\n";
-	std::cout << "█████████████████████████████████\n";
+	std::cout << "          ██████████████████████\n"; 
+	std::cout << "          █                    █\n";
+	std::cout << "          █  Justins Tetris    █\n";
+	std::cout << "          █                    █\n";
+	std::cout << "          █  Controls :        █\n";
+	std::cout << "          █                    █\n";
+	std::cout << "          █  Move : ← →        █\n";
+	std::cout << "          █  Rotate : y, x     █\n";
+	std::cout << "          █  Soft Drop : ↓     █\n";
+	std::cout << "          █  Hard Drop : ↑     █\n";
+	std::cout << "          █                    █\n";
+	std::cout << "          █  Next Piece :      █\n";
+	std::cout << "          █                    █\n";
+	std::cout << "          █                    █\n";
+	std::cout << "          █                    █\n";
+	std::cout << "          █  Score :           █\n";
+	std::cout << "          █                    █\n";
+	std::cout << "          █  Lvl : [01]        █\n";
+	std::cout << "          █  Lines : [00 / 00] █\n";
+	std::cout << "          █  Time : [00:00]    █\n";
+	std::cout << "███████████                    █\n";
+	std::cout << "████████████████████████████████\n";
 }
-
-//void GameField::PrintTetrisGameInfo()
-//{
-//	std::cout << "";
-//	std::cout << "";
-//	std::cout << "";
-//	std::cout << "";
-//	std::cout << "";
-//	std::cout << "";
-//	std::cout << "";
-//	std::cout << "";
-//	std::cout << "";
-//	std::cout << "";
-//	std::cout << "";
-//	std::cout << "";
-//	std::cout << "";
-//	std::cout << "";
-//	std::cout << "";
-//	std::cout << "";
-//	std::cout << "";
-//	std::cout << "";
-//	std::cout << "";
-//	std::cout << "";
-//	std::cout << "";
-//	std::cout << "";
-//}
-
